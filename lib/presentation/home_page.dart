@@ -177,7 +177,7 @@ class _HomePageState extends State<HomePage> {
                 const Spacer(),
                 Container(
                   margin: const EdgeInsets.all(16.0),
-                  padding: const EdgeInsets.fromLTRB(1, 1.5, 1, 1),
+                  padding: const EdgeInsets.fromLTRB(1, 1.5, 1, 1.5),
                   width: MediaQuery.of(context).size.width * 0.8,
                   height: MediaQuery.of(context).size.height * 0.07,
                   decoration: BoxDecoration(
