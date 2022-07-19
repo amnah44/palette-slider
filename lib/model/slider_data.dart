@@ -17,13 +17,13 @@ final sliderDataList = [
     titleBook: "Python Language",
     imageBook: "images/basicspython.jpg",
     priseBook: 23.5,
-    descriptionBook: "Programming basic with python",
+    descriptionBook: "Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990.",
   ),
   SliderData(
     titleBook: "Java Language",
     imageBook: "images/beginingjava.jpg",
     priseBook: 32.75,
-    descriptionBook: "Beginning Programming with java",
+    descriptionBook: "JAVA was developed by James Gosling at Sun Microsystems Inc in the year 1995.",
   ),
   SliderData(
     titleBook: "C Language",
@@ -35,6 +35,6 @@ final sliderDataList = [
     titleBook: "Head First OOP",
     imageBook: "images/head_first.jpg",
     priseBook: 16.5,
-    descriptionBook: "Analysis and Design your code",
+    descriptionBook: "Wouldn't it be dreamy if there was an analysis and design book that was more fun than going to an HR benefits meeting? It's probably nothing but a fantasy...",
   ),
 ];

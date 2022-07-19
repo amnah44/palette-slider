@@ -89,13 +89,13 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SafeArea(
         child: Blur(
-          blur: 6,
-          colorOpacity: 0.5,
+          blur: 8,
+          colorOpacity: 0.6,
           blurColor:
               colors.isNotEmpty ? colors[_currentPage].color : Colors.white,
           overlay: Expanded(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.6,
@@ -124,75 +124,6 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Text(
-                      "The prise of a book : ",
-                      style: TextStyle(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 18,
-                        color: Colors.black45,
-                      ),
-                    ),
-                    Text(
-                      "${sliderDataList[_currentPage].priseBook}\$",
-                      style: const TextStyle(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 30,
-                        color: Colors.black54,
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.06,
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 24, right: 24),
-                  child: Text(
-                    "Created by Amnah_",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 16,
-                      color: Colors.black26,
-                    ),
-                  ),
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 24, right: 24),
-                  child: Divider(
-                    color: Colors.black12,
-                    thickness: 1,
-                  ),
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.05,
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.only(left: 24, right: 24, bottom: 12),
-                  child: Text(
-                    "${sliderDataList[_currentPage].titleBook}",
-                    style: const TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 36,
-                      color: Colors.black38,
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 24, right: 24),
-                  child: Text(
-                    "${sliderDataList[_currentPage].descriptionBook}",
-                    style: const TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 18,
-                      color: Colors.black26,
-                    ),
-                  ),
-                ),
-                const Spacer(),
                 Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Center(
@@ -212,6 +143,64 @@ class _HomePageState extends State<HomePage> {
                           ],
                         )
                       ],
+                    ),
+                  ),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Padding(
+                      padding:
+                      const EdgeInsets.fromLTRB(24,16,24,8),
+                      child: Text(
+                        "${sliderDataList[_currentPage].titleBook}",
+                        style: const TextStyle(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 24,
+                          color: Colors.black54,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 24, right: 24),
+                      child: Text(
+                        "${sliderDataList[_currentPage].descriptionBook}",
+                        style: const TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16,
+                          color: Colors.black26,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const Spacer(),
+                Container(
+                  margin: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.fromLTRB(1, 1.5, 1, 1),
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  height: MediaQuery.of(context).size.height * 0.07,
+                  decoration: BoxDecoration(
+                    color: Colors.black54,
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(26),
+                    child: Blur(
+                      blur: 8,
+                      blurColor: colors.isNotEmpty ? colors[_currentPage].color : Colors.white,
+                      colorOpacity: 0.8,
+                      overlay: Center(
+                        child: Text(
+                          "${sliderDataList[_currentPage].priseBook}\$",
+                          style: const TextStyle(
+                            fontWeight: FontWeight.w700,
+                            fontSize: 30,
+                            color: Colors.black87,
+                          ),
+                        ),
+                      ),
+                      child: Container(),
                     ),
                   ),
                 ),

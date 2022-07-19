@@ -30,10 +30,6 @@ flutter:
     - images/
 
   fonts:
-    - family: Sweet Bear DEMO
-      fonts:
-        - asset: fonts/Sweet Bear DEMO.ttf
-
     - family: MelanieRegular
       fonts:
         - asset: fonts/MelanieRegular.ttf

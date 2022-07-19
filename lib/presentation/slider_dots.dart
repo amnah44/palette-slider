@@ -13,7 +13,7 @@ class SliderDots extends StatelessWidget {
       height: isActive ? 12 : 8,
       width: isActive ? 24 : 8,
       decoration: BoxDecoration(
-          color: isActive? Colors.black : Colors.transparent,
+          color: isActive? Colors.black54 : Colors.transparent,
           borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: Colors.black
